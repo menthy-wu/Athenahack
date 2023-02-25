@@ -16,6 +16,8 @@ public class bulletParticle : MonoBehaviour
     private void Start()
     {
         particalSystem = GetComponent<ParticleSystem>();
+        var emission = particalSystem.emission;
+        emission.enabled = false;
     }
 
     public void startParticle()
