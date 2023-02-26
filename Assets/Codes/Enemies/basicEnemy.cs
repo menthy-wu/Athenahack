@@ -26,9 +26,12 @@ public class basicEnemy : Enemy
     [SerializeField]
     GameObject spark;
     Animator cemera;
+    private Animator anim;
 
     void Start()
     {
+        anim = GetComponent<Animator>();
+        anim.SetBool("isShooting",false);
         rb = GetComponent<Rigidbody2D>();
         weapon = gameObject.transform.Find("Weapon");
         target = GameObject.Find("Player").transform;
@@ -40,10 +43,15 @@ public class basicEnemy : Enemy
     {
         move();
         rotateGun();
-        if (Vector2.Distance(target.position, transform.position) <= distanceToShoot)
+        if (Vector2.Distance(target.position, transform.position) <= distanceToShoot){
+            anim.SetBool("isShooting",true);
             shoot();
-        else
+        }
+        else{
+            anim.SetBool("isShooting",false);
             stopShoot();
+        }
+
     }
 
     void move()
