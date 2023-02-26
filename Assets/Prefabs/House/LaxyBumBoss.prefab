@@ -46,11 +46,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numCol: 3
   speed: 2
-  texture: {fileID: 21300000, guid: 22881dda886ef764cb83b521f6dfa76b, type: 3}
-  color: {r: 1, g: 0, b: 0, a: 1}
+  texture: {fileID: 21300000, guid: 0b2971a4668e7ba4cb5995858ffa8e96, type: 3}
+  color: {r: 1, g: 0.78679246, b: 0.78679246, a: 1}
   lifetime: 5
-  firerate: 0.1
-  size: 0.2
+  firerate: 0.5
+  size: 0.8
   material: {fileID: 2100000, guid: 1a3088d9f883cdb49ae0dc4cb607a0f2, type: 2}
   spinSpeed: 60
   spark: {fileID: 7113575314518269492, guid: dd708f75e80e7064fa8320f59cc1d7f4, type: 3}
