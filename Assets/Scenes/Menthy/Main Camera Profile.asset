@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b2db86121404754db890f4c8dfe81b2, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   threshold:
     m_OverrideState: 1
     m_Value: 0.9
@@ -74,7 +74,7 @@ MonoBehaviour:
     m_Value: 65472
   tint:
     m_OverrideState: 1
-    m_Value: {r: 0.21960786, g: 1, b: 0.8039216, a: 1}
+    m_Value: {r: 1, g: 0.8909172, b: 0.645283, a: 1}
   highQualityFiltering:
     m_OverrideState: 0
     m_Value: 0
