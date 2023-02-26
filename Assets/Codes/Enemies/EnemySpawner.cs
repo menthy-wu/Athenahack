@@ -10,6 +10,8 @@ public class EnemySpawner : MonoBehaviour
     int currentwave = 0;
     bool is_win = false;
     GameObject winUI;
+    GameObject progress;
+    float prograsslength;
 
     private void Awake()
     {
@@ -21,6 +23,8 @@ public class EnemySpawner : MonoBehaviour
         totalWaves = transform.childCount;
         winUI = GameObject.Find("WinUI");
         winUI.SetActive(false);
+        progress = GameObject.Find("Progress").transform.Find("bar").gameObject;
+        prograsslength = progress.transform.localScale.x;
     }
 
     private void Start()
@@ -36,9 +40,14 @@ public class EnemySpawner : MonoBehaviour
         {
             waves[currentwave].SetActive(false);
             currentwave++;
+            progress.transform.localScale = new Vector3(
+                prograsslength * ((totalWaves - currentwave) / (float)totalWaves),
+                progress.transform.localScale.y,
+                progress.transform.localScale.z
+            );
             if (currentwave >= totalWaves)
             {
-                win();
+                Invoke("win", 1f);
                 is_win = true;
                 return;
             }
