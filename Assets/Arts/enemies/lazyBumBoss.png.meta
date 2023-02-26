@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 4d3805fa8d04bef4b883ededdf4f3296
-=======
-guid: ddda40d1c467015439220d1ab9ba3282
->>>>>>> 862088c7c547b7ab2941d89d78e27f6c24ef42a5
+guid: dc5b7dc512a1b7f41ae1c92623aa5696
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -37,11 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD
     filterMode: 0
-=======
-    filterMode: 1
->>>>>>> 862088c7c547b7ab2941d89d78e27f6c24ef42a5
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -50,20 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< HEAD
   spriteMode: 2
-=======
-  spriteMode: 1
->>>>>>> 862088c7c547b7ab2941d89d78e27f6c24ef42a5
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
   spritePixelsToUnits: 32
-=======
-  spritePixelsToUnits: 100
->>>>>>> 862088c7c547b7ab2941d89d78e27f6c24ef42a5
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -86,11 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< HEAD
     textureCompression: 0
-=======
-    textureCompression: 1
->>>>>>> 862088c7c547b7ab2941d89d78e27f6c24ef42a5
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,30 +101,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LawyerEnemy_0
+      name: lazyBumBoss_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,41 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1e645d68c1a2434dbde0e05cfc7a64f
-      internalID: 1494435654
+      spriteID: fcb8e4a5941b11842a9b988398f419c4
+      internalID: 1282379113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LawyerEnemy_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e45b4f9ae74c6f4cb40f9665c6299e3
-      internalID: 860010733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LawyerEnemy_2
+      name: lazyBumBoss_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,17 +140,12 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac387d69397d395448776dd9fa869411
-      internalID: 1778347498
+      spriteID: 64efd4489cca65c428080efa6741820e
+      internalID: 787522867
       vertices: []
       indices: 
       edges: []
       weights: []
-=======
-  spriteSheet:
-    serializedVersion: 2
-    sprites: []
->>>>>>> 862088c7c547b7ab2941d89d78e27f6c24ef42a5
     outline: []
     physicsShape: []
     bones: []
@@ -215,14 +156,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-<<<<<<< HEAD
     nameFileIdTable:
-      LawyerEnemy_0: 1494435654
-      LawyerEnemy_1: 860010733
-      LawyerEnemy_2: 1778347498
-=======
-    nameFileIdTable: {}
->>>>>>> 862088c7c547b7ab2941d89d78e27f6c24ef42a5
+      lazyBumBoss_0: 1282379113
+      lazyBumBoss_1: 787522867
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

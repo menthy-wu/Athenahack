@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: enemyAttack
+  m_Name: TownsfolkEnemy2Walk
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 466470563, guid: 89ffbaacc882e1547993a806bf42828d, type: 3}
+      value: {fileID: 183005728, guid: c17e986f4988771499647d0f764bdf8b, type: 3}
+    - time: 0.25
+      value: {fileID: -244345863, guid: c17e986f4988771499647d0f764bdf8b, type: 3}
+    - time: 0.41666666
+      value: {fileID: -244345863, guid: c17e986f4988771499647d0f764bdf8b, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -40,13 +44,15 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 466470563, guid: 89ffbaacc882e1547993a806bf42828d, type: 3}
+    - {fileID: 183005728, guid: c17e986f4988771499647d0f764bdf8b, type: 3}
+    - {fileID: -244345863, guid: c17e986f4988771499647d0f764bdf8b, type: 3}
+    - {fileID: -244345863, guid: c17e986f4988771499647d0f764bdf8b, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.016666668
+    m_StopTime: 0.43333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
