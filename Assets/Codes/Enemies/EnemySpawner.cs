@@ -29,7 +29,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void Start()
     {
-        Invoke("inableWave", 1f);
+        Invoke("inableWave", 3f);
     }
 
     private void FixedUpdate()
