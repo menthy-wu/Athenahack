@@ -4,26 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-<<<<<<< HEAD
-=======
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
->>>>>>> 591dab14194c5121cd744007c1384df052a161e0
-  - enabled: 1
-    path: Assets/Scenes/StartPage.unity
-    guid: 784fc1a9cb991f847907603a841734d1
-  - enabled: 1
-    path: Assets/Scenes/Menthy.unity
-    guid: 1ede139a4e8c76145bf326fe53ac6151
-<<<<<<< HEAD
-  - enabled: 1
-    path: Assets/Scenes/AmeliaCopy.unity
-    guid: 35e0656e068957a4fa559e44ae9fd936
-  - enabled: 1
-    path: Assets/Scenes/Amelia.unity
-    guid: 06a8311c9e8a288468b47ae216208fd5
-=======
->>>>>>> 591dab14194c5121cd744007c1384df052a161e0
+  m_Scenes: []
   m_configObjects: {}
