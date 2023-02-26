@@ -10,6 +10,6 @@ public class LevelStart : MonoBehaviour
     public void press()
     {
         // Debug.Log(level);
-        SceneManager.LoadScene(level + 1);
+        SceneManager.LoadScene(level);
     }
 }
