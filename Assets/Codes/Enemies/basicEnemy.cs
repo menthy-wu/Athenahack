@@ -11,8 +11,6 @@ public class basicEnemy : MonoBehaviour
     [SerializeField]
     float speed = 3f;
 
-    [SerializeField]
-    float rotateSpeed = 0.0025f;
     Rigidbody2D rb;
 
     [SerializeField]
@@ -20,27 +18,40 @@ public class basicEnemy : MonoBehaviour
 
     [SerializeField]
     float distanceToStop = 3f;
+    Transform weapon;
+    Vector3 playerPos;
+    Vector3 aimDir;
+    float flip = 1;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        weapon = gameObject.transform.Find("Weapon");
         target = GameObject.Find("Player").transform;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Vector2.Distance(target.position, transform.position) >= distanceToStop)
-            rb.velocity = transform.up * speed;
-        RotatesTowardsTarget();
+        move();
+        rotateGun();
+        if (Vector2.Distance(target.position, transform.position) <= distanceToShoot)
+            shoot();
+        else
+            stopShoot();
     }
 
-    void RotatesTowardsTarget()
+    void move()
     {
         Vector2 targetDir = target.position - transform.position;
-        float angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg - 90f;
-        Quaternion q = Quaternion.Euler(new Vector3(0, 0, angle));
-        transform.localRotation = Quaternion.Slerp(transform.localRotation, q, rotateSpeed);
+        if (Vector2.Distance(target.position, transform.position) >= distanceToStop)
+        {
+            rb.velocity = targetDir.normalized * speed;
+        }
+        else
+        {
+            rb.velocity = Vector2.Perpendicular(targetDir.normalized) * speed;
+        }
     }
 
     public void hurt(float damage)
@@ -51,4 +62,35 @@ public class basicEnemy : MonoBehaviour
     }
 
     void die() { }
+
+    void rotateGun()
+    {
+        playerPos = target.transform.position;
+
+        aimDir = playerPos - transform.position;
+        if (playerPos.x < transform.position.x)
+        {
+            flip = -1;
+        }
+        else
+            flip = 1;
+        float angle = Mathf.Atan2(aimDir.y, flip * aimDir.x) * Mathf.Rad2Deg;
+        transform.localScale = new Vector3(flip, 1, 1);
+        weapon.eulerAngles = new Vector3(0, 0, flip * angle);
+    }
+
+    void shoot()
+    {
+        weapon.GetChild(0).GetComponent<Weapon>().Fire();
+    }
+
+    void stopShoot()
+    {
+        weapon.GetChild(0).GetComponent<Weapon>().stopFire();
+    }
+
+    void damage(float damage)
+    {
+        Debug.Log("noooo");
+    }
 }

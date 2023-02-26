@@ -33,9 +33,9 @@ public class PlayerBehavior : MonoBehaviour
     void FixedUpdate()
     {
         move();
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(1))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             shoot();
-        if (Input.GetKeyUp(KeyCode.Space) || Input.GetMouseButtonDown(1))
+        if (Input.GetKeyUp(KeyCode.Space) || Input.GetMouseButtonUp(0))
             stopShoot();
     }
 
@@ -69,5 +69,10 @@ public class PlayerBehavior : MonoBehaviour
     {
         animator.SetBool("attact", false);
         weapon.GetChild(0).GetComponent<Weapon>().stopFire();
+    }
+
+    void damage(float damage)
+    {
+        Debug.Log("noooo");
     }
 }
