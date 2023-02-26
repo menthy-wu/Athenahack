@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DefaultGun : Weapon
+public class DefaultGun1 : Weapon
 {
-    bulletParticle bullet;
+    bulletParticle1 bullet;
 
     // Start is called before the first frame update
     void Awake()
     {
-        bullet = gameObject.transform.Find("Bullet").gameObject.GetComponent<bulletParticle>();
+        bullet = gameObject.transform.Find("Bullet").gameObject.GetComponent<bulletParticle1>();
     }
 
     // Update is called once per frame
