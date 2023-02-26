@@ -10,7 +10,7 @@ public class ChangeToScene : MonoBehaviour
         SceneManager.LoadScene(num);
     }
 
-    public gvoid changeToNextScene()
+    public void changeToNextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
