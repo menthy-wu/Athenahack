@@ -16,15 +16,32 @@ public class PlayerBehavior : MonoBehaviour
     Transform weapon;
     Animator animator;
 
+    [SerializeField]
+    int health;
+
+    [SerializeField]
+    GameObject spark;
+    Animator cemera;
+    health healthObject;
+    GameObject loseUI;
+
     float flip = 1;
 
     // Start is called before the first frame update
+    void Awake()
+    {
+        loseUI = GameObject.Find("LostUI");
+        loseUI.SetActive(false);
+    }
+
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         weapon = gameObject.transform.Find("Weapon");
         cam = GameObject.Find("Main Camera").GetComponent<Camera>();
+        cemera = GameObject.Find("Main Camera").GetComponent<Animator>();
         animator = GetComponent<Animator>();
+        healthObject = GameObject.Find("Health").GetComponent<health>();
     }
 
     // Update is called once per frame
@@ -33,9 +50,9 @@ public class PlayerBehavior : MonoBehaviour
     void FixedUpdate()
     {
         move();
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        if (Input.GetKey(KeyCode.Space) || Input.GetMouseButton(0))
             shoot();
-        if (Input.GetKeyUp(KeyCode.Space) || Input.GetMouseButtonUp(0))
+        else
             stopShoot();
     }
 
@@ -71,8 +88,20 @@ public class PlayerBehavior : MonoBehaviour
         weapon.GetChild(0).GetComponent<Weapon>().stopFire();
     }
 
-    void damage(float damage)
+    public void damage(float damage)
     {
-        Debug.Log("noooo");
+        health--;
+        healthObject.damage();
+        if (health <= 0)
+            die();
+    }
+
+    void die()
+    {
+        animator.SetBool("die", true);
+        GameObject sparkInstance = Instantiate(spark, transform.position, transform.rotation);
+        Object.Destroy(sparkInstance, 2.0f);
+        cemera.Play("cemarashake");
+        loseUI.SetActive(true);
     }
 }

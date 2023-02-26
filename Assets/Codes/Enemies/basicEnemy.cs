@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class basicEnemy : MonoBehaviour
+public class basicEnemy : Enemy
 {
     [SerializeField]
     float health;
@@ -23,14 +23,16 @@ public class basicEnemy : MonoBehaviour
     Vector3 aimDir;
     float flip = 1;
 
-    private Animator anim;
+    [SerializeField]
+    GameObject spark;
+    Animator cemera;
 
     void Start()
     {
-        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         weapon = gameObject.transform.Find("Weapon");
         target = GameObject.Find("Player").transform;
+        cemera = GameObject.Find("Main Camera").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -39,13 +41,9 @@ public class basicEnemy : MonoBehaviour
         move();
         rotateGun();
         if (Vector2.Distance(target.position, transform.position) <= distanceToShoot)
-            {anim.SetBool("isShooting", true);
             shoot();
-            }
         else
-            {stopShoot();
-            anim.SetBool("isShooting", false);
-            }
+            stopShoot();
     }
 
     void move()
@@ -68,7 +66,13 @@ public class basicEnemy : MonoBehaviour
             die();
     }
 
-    void die() { }
+    void die()
+    {
+        GameObject sparkInstance = Instantiate(spark, transform.position, transform.rotation);
+        Object.Destroy(sparkInstance, 2.0f);
+        cemera.Play("cemarashake");
+        Destroy(gameObject);
+    }
 
     void rotateGun()
     {
@@ -96,8 +100,10 @@ public class basicEnemy : MonoBehaviour
         weapon.GetChild(0).GetComponent<Weapon>().stopFire();
     }
 
-    void damage(float damage)
+    public override void damage(float damage)
     {
-        Debug.Log("noooo");
+        health -= damage;
+        if (health <= 0)
+            die();
     }
 }
