@@ -11,6 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MidLevel.unity
     guid: 1ede139a4e8c76145bf326fe53ac6151
+<<<<<<< HEAD
   - enabled: 1
     path: Assets/Scenes/HouseScene.unity
     guid: 90dde1aa051f3e2489f5db8a69a65029
@@ -23,4 +24,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HouseScene 1.unity
     guid: d8e0ffd7d7f004547ad5b9804c154b63
+=======
+>>>>>>> 747e03493c538e7ea6a3f050b98fadfb069609b3
   m_configObjects: {}

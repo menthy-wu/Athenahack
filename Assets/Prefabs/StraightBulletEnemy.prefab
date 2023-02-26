@@ -5087,6 +5087,7 @@ MonoBehaviour:
   speed: 5
   distanceToShoot: 5
   distanceToStop: 3
+  spark: {fileID: 0}
 --- !u!50 &6647995695059067725
 Rigidbody2D:
   serializedVersion: 4
@@ -5125,7 +5126,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.75, y: 0.96875}
+    oldSize: {x: 0.75, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5144,7 +5145,7 @@ Animator:
   m_GameObject: {fileID: 8597189123952157462}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2b83a5f73a2063844abfecbe58a5018e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 45aad10f50281794b8547e8cc6fe6529, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
