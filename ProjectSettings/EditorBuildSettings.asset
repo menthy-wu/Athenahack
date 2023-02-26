@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/StartPage.unity
+    guid: 784fc1a9cb991f847907603a841734d1
+  - enabled: 1
+    path: Assets/Scenes/Menthy.unity
+    guid: 1ede139a4e8c76145bf326fe53ac6151
   m_configObjects: {}
