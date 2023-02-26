@@ -1324,6 +1324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29f2ccef79ad69045bfb982167b6220c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  infinet: 0
 --- !u!4 &961996009 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8768076423993943699, guid: 6d0d5ac224da944469f02ec1f915a34c, type: 3}
@@ -9659,6 +9660,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1868528824}
     m_Modifications:
+    - target: {fileID: 8768076423800163973, guid: 6d0d5ac224da944469f02ec1f915a34c, type: 3}
+      propertyPath: size
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768076423800163973, guid: 6d0d5ac224da944469f02ec1f915a34c, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768076423800163973, guid: 6d0d5ac224da944469f02ec1f915a34c, type: 3}
+      propertyPath: firerate
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768076423800163973, guid: 6d0d5ac224da944469f02ec1f915a34c, type: 3}
+      propertyPath: spinSpeed
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 8768076423993943698, guid: 6d0d5ac224da944469f02ec1f915a34c, type: 3}
       propertyPath: m_Name
       value: BossNoble

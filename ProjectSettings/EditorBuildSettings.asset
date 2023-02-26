@@ -4,9 +4,6 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-<<<<<<< HEAD
-  m_Scenes: []
-=======
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/StartPage.unity
@@ -15,10 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/MidLevel.unity
     guid: 1ede139a4e8c76145bf326fe53ac6151
   - enabled: 1
+    path: Assets/Scenes/HouseScene.unity
+    guid: 90dde1aa051f3e2489f5db8a69a65029
+  - enabled: 1
     path: Assets/Scenes/CourtLevel.unity
     guid: 672518e10b2cc4646ba9f992393774b4
   - enabled: 1
-    path: Assets/Scenes/HouseScene.unity
-    guid: 90dde1aa051f3e2489f5db8a69a65029
->>>>>>> f8df6d7657be4444a1922dda29e63455113b624f
+    path: Assets/Scenes/MidLevel 1.unity
+    guid: 45c86c4228b1fbe46ad5ce0b5356211f
+  - enabled: 1
+    path: Assets/Scenes/HouseScene 1.unity
+    guid: d8e0ffd7d7f004547ad5b9804c154b63
   m_configObjects: {}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8401654101139498299}
   - component: {fileID: 8401654101139498298}
   - component: {fileID: 8401654101139498293}
-  - component: {fileID: 8401654101139498292}
+  - component: {fileID: 5324472558222001701}
   m_Layer: 3
   m_Name: Bullet
   m_TagString: Untagged
@@ -4871,7 +4871,7 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!114 &8401654101139498292
+--- !u!114 &5324472558222001701
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4880,7 +4880,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8401654101139498295}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bda7bd53f5df64d40af4abf8cb2ef32b, type: 3}
+  m_Script: {fileID: 11500000, guid: 092b17c979ff188488d9faf37c6daeef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spark: {fileID: 5268586057238697588, guid: 4e79ce27bc1bd90438cd47babdfec4e5, type: 3}
@@ -4894,7 +4894,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8401654101590063036}
   - component: {fileID: 8401654101590063037}
-  - component: {fileID: 8401654101590063042}
+  - component: {fileID: 531760123117847773}
   m_Layer: 3
   m_Name: gun
   m_TagString: Untagged
@@ -4970,7 +4970,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8401654101590063042
+--- !u!114 &531760123117847773
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4979,7 +4979,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8401654101590063039}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35d380c6b97cd14429220d43093179a9, type: 3}
+  m_Script: {fileID: 11500000, guid: 14c0f9f268ffcee42bd3bd9d4a55e665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8401654101965784661

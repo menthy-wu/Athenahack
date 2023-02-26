@@ -33,8 +33,7 @@ public class PlayerBehavior1 : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        // loseUI = GameObject.Find("LostUI");
-        // loseUI.SetActive(false);
+        loseUI = GameObject.Find("LostUI");
         rb = gameObject.GetComponent<Rigidbody2D>();
         weapon = gameObject.transform.Find("Weapon");
         cam = GameObject.Find("Main Camera").GetComponent<Camera>();
@@ -122,12 +121,14 @@ public class PlayerBehavior1 : MonoBehaviour
 
     void die()
     {
+        loseUI.transform.GetChild(0).gameObject.SetActive(true);
+        return;
         animator.SetBool("die", true);
         GameObject sparkInstance = Instantiate(spark, transform.position, transform.rotation);
         Object.Destroy(sparkInstance, 2.0f);
         cemera.Play("cemarashake");
         lose--;
-        if (lose == 0)
-            loseUI.SetActive(true);
+        if (lose <= 0)
+            loseUI.transform.GetChild(0).gameObject.SetActive(true);
     }
 }

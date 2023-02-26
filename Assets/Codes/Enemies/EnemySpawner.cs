@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class EnemySpawner : MonoBehaviour
     GameObject winUI;
     GameObject progress;
     float prograsslength;
+
+    [SerializeField]
+    bool infinet = false;
 
     private void Awake()
     {
@@ -57,6 +61,8 @@ public class EnemySpawner : MonoBehaviour
 
     void win()
     {
+        if(infinet)
+        SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex ;
         winUI.SetActive(true);
     }
 
