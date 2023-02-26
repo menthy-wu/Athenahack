@@ -64,9 +64,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8768076423993943699}
   - component: {fileID: 8768076423993943696}
-  - component: {fileID: 8768076423993943703}
   - component: {fileID: 8768076423993943702}
   - component: {fileID: 8768076423993943697}
+  - component: {fileID: 1494537189057992289}
   m_Layer: 6
   m_Name: LaxyBumBoss
   m_TagString: Untagged
@@ -81,7 +81,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8768076423993943698}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.7053099, y: 6.452998, z: 0.2852786}
   m_LocalScale: {x: 1.56, y: 1.56, z: 1.56}
   m_ConstrainProportionsScale: 1
@@ -142,20 +142,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8768076423993943703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8768076423993943698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3ba942b1bbdf504da83e56ff43751f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 24
-  spark: {fileID: 2638021918873970054, guid: bf720dac7ffe8234ca5368f5e2654989, type: 3}
 --- !u!50 &8768076423993943702
 Rigidbody2D:
   serializedVersion: 4
@@ -203,3 +189,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
+--- !u!95 &1494537189057992289
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8768076423993943698}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d149f786a1de5204385b28b56554b284, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
