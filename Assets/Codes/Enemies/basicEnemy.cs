@@ -23,8 +23,11 @@ public class basicEnemy : MonoBehaviour
     Vector3 aimDir;
     float flip = 1;
 
+    private Animator anim;
+
     void Start()
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         weapon = gameObject.transform.Find("Weapon");
         target = GameObject.Find("Player").transform;
@@ -36,9 +39,13 @@ public class basicEnemy : MonoBehaviour
         move();
         rotateGun();
         if (Vector2.Distance(target.position, transform.position) <= distanceToShoot)
+            {anim.SetBool("isShooting", true);
             shoot();
+            }
         else
-            stopShoot();
+            {stopShoot();
+            anim.SetBool("isShooting", false);
+            }
     }
 
     void move()
