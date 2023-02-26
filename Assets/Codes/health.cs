@@ -6,7 +6,23 @@ public class health : MonoBehaviour
 {
     [SerializeField]
     int totalhealth = 5;
+    List<GameObject> hearts = new List<GameObject>();
 
-    [SerializeField]
-    List<GameObject> hearts;
+    private void Awake()
+    {
+        foreach (Transform child in transform)
+        {
+            hearts.Add(child.gameObject);
+        }
+    }
+
+    public void damage()
+    {
+        totalhealth--;
+        if (totalhealth < 0)
+        {
+            return;
+        }
+        hearts[totalhealth].SetActive(false);
+    }
 }

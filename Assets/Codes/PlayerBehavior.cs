@@ -22,16 +22,26 @@ public class PlayerBehavior : MonoBehaviour
     [SerializeField]
     GameObject spark;
     Animator cemera;
+    health healthObject;
+    GameObject loseUI;
 
     float flip = 1;
 
     // Start is called before the first frame update
+    void Awake()
+    {
+        loseUI = GameObject.Find("LostUI");
+        loseUI.SetActive(false);
+    }
+
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         weapon = gameObject.transform.Find("Weapon");
         cam = GameObject.Find("Main Camera").GetComponent<Camera>();
+        cemera = GameObject.Find("Main Camera").GetComponent<Animator>();
         animator = GetComponent<Animator>();
+        healthObject = GameObject.Find("Health").GetComponent<health>();
     }
 
     // Update is called once per frame
@@ -81,6 +91,7 @@ public class PlayerBehavior : MonoBehaviour
     public void damage(float damage)
     {
         health--;
+        healthObject.damage();
         if (health <= 0)
             die();
     }
@@ -91,5 +102,6 @@ public class PlayerBehavior : MonoBehaviour
         GameObject sparkInstance = Instantiate(spark, transform.position, transform.rotation);
         Object.Destroy(sparkInstance, 2.0f);
         cemera.Play("cemarashake");
+        loseUI.SetActive(true);
     }
 }

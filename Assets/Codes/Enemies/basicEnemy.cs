@@ -68,7 +68,6 @@ public class basicEnemy : Enemy
 
     void die()
     {
-        Debug.Log("hhihi");
         GameObject sparkInstance = Instantiate(spark, transform.position, transform.rotation);
         Object.Destroy(sparkInstance, 2.0f);
         cemera.Play("cemarashake");
