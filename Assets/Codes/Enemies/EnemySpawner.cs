@@ -61,8 +61,8 @@ public class EnemySpawner : MonoBehaviour
 
     void win()
     {
-        if(infinet)
-        SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex ;
+        if (infinet)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         winUI.SetActive(true);
     }
 
