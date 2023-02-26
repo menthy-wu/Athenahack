@@ -47,7 +47,6 @@ MonoBehaviour:
   - {fileID: 3213071745277187302}
   - {fileID: 2295613555506820406}
   - {fileID: 6096490349559282707}
-  - {fileID: 0}
 --- !u!114 &8986865760370931
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -60,13 +59,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b2db86121404754db890f4c8dfe81b2, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   threshold:
     m_OverrideState: 1
     m_Value: 0.9
   intensity:
     m_OverrideState: 1
-    m_Value: 12.58
+    m_Value: 8
   scatter:
     m_OverrideState: 0
     m_Value: 0.7
@@ -75,7 +74,7 @@ MonoBehaviour:
     m_Value: 65472
   tint:
     m_OverrideState: 1
-    m_Value: {r: 0.34591186, g: 1, b: 0.72824293, a: 1}
+    m_Value: {r: 0.21960786, g: 1, b: 0.8039216, a: 1}
   highQualityFiltering:
     m_OverrideState: 0
     m_Value: 0

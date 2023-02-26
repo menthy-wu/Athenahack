@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BulletSpawner : MonoBehaviour
 {
+    public bool changeDirection = false;
     public int numCol;
     public float speed;
     public Sprite texture;
@@ -13,8 +14,10 @@ public class BulletSpawner : MonoBehaviour
     public float size;
     public Material material;
     public float spinSpeed;
+    public float timeChangeDirection = 2;
     private float time;
     private float angle;
+
     bulletParticle bulletParticle;
 
     [SerializeField]
@@ -29,6 +32,24 @@ public class BulletSpawner : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if(changeDirection){
+            if(time<timeChangeDirection && time>=0){
+            time += Time.fixedDeltaTime;
+            transform.rotation = Quaternion.Euler(0,0, time*spinSpeed);
+            }
+            else if (time >= timeChangeDirection){
+                time = 0;
+                time -= Time.fixedDeltaTime;
+                transform.rotation = Quaternion.Euler(0,0, time*spinSpeed);
+            }
+            else if(time>-timeChangeDirection){
+                time -= Time.fixedDeltaTime;
+                transform.rotation = Quaternion.Euler(0,0, time*spinSpeed);
+            }
+            else{
+                time = 0;
+            }
+        }
         time += Time.fixedDeltaTime;
         transform.rotation = Quaternion.Euler(0, 0, time * spinSpeed);
     }
