@@ -45,7 +45,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2914565634820195604, guid: 2c3681a32888ac741aa3d24ab64c71b7, type: 3}
       propertyPath: m_Name
-      value: BabyEnemy
+      value: BabyEnemy Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2914565634820195605, guid: 2c3681a32888ac741aa3d24ab64c71b7, type: 3}
       propertyPath: m_RootOrder
@@ -53,15 +53,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2914565634820195605, guid: 2c3681a32888ac741aa3d24ab64c71b7, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.99999994
+      value: 1.68
       objectReference: {fileID: 0}
     - target: {fileID: 2914565634820195605, guid: 2c3681a32888ac741aa3d24ab64c71b7, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.99999994
+      value: 1.68
       objectReference: {fileID: 0}
     - target: {fileID: 2914565634820195605, guid: 2c3681a32888ac741aa3d24ab64c71b7, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.99999994
+      value: 1.68
       objectReference: {fileID: 0}
     - target: {fileID: 2914565634820195605, guid: 2c3681a32888ac741aa3d24ab64c71b7, type: 3}
       propertyPath: m_LocalPosition.x

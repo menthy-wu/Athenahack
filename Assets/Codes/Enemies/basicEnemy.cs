@@ -22,6 +22,7 @@ public class basicEnemy : Enemy
     Vector3 playerPos;
     Vector3 aimDir;
     float flip = 1;
+    float w;
 
     [SerializeField]
     GameObject spark;
@@ -31,11 +32,12 @@ public class basicEnemy : Enemy
     void Start()
     {
         anim = GetComponent<Animator>();
-        anim.SetBool("isShooting",false);
+        anim.SetBool("isShooting", false);
         rb = GetComponent<Rigidbody2D>();
         weapon = gameObject.transform.Find("Weapon");
         target = GameObject.Find("Player").transform;
         cemera = GameObject.Find("Main Camera").GetComponent<Animator>();
+        w = transform.localScale.x;
     }
 
     // Update is called once per frame
@@ -43,15 +45,16 @@ public class basicEnemy : Enemy
     {
         move();
         rotateGun();
-        if (Vector2.Distance(target.position, transform.position) <= distanceToShoot){
-            anim.SetBool("isShooting",true);
+        if (Vector2.Distance(target.position, transform.position) <= distanceToShoot)
+        {
+            anim.SetBool("isShooting", true);
             shoot();
         }
-        else{
-            anim.SetBool("isShooting",false);
+        else
+        {
+            anim.SetBool("isShooting", false);
             stopShoot();
         }
-
     }
 
     void move()
@@ -94,7 +97,7 @@ public class basicEnemy : Enemy
         else
             flip = 1;
         float angle = Mathf.Atan2(aimDir.y, flip * aimDir.x) * Mathf.Rad2Deg;
-        transform.localScale = new Vector3(flip, 1, 1);
+        transform.localScale = new Vector3(flip * w, w, w);
         weapon.eulerAngles = new Vector3(0, 0, flip * angle);
     }
 

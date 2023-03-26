@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerBehavior : MonoBehaviour
 {
     float x,
-        y;
+        y,
+        w;
 
     [SerializeField]
     float speed;
@@ -24,6 +25,7 @@ public class PlayerBehavior : MonoBehaviour
     Animator cemera;
     health healthObject;
     GameObject loseUI;
+    bool died = false;
 
     float flip = 1;
 
@@ -42,6 +44,7 @@ public class PlayerBehavior : MonoBehaviour
         cemera = GameObject.Find("Main Camera").GetComponent<Animator>();
         animator = GetComponent<Animator>();
         healthObject = GameObject.Find("Health").GetComponent<health>();
+        w = transform.localScale.x;
     }
 
     // Update is called once per frame
@@ -49,6 +52,8 @@ public class PlayerBehavior : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (died)
+            return;
         move();
         if (Input.GetKey(KeyCode.Space) || Input.GetMouseButton(0))
             shoot();
@@ -72,7 +77,7 @@ public class PlayerBehavior : MonoBehaviour
         else
             flip = 1;
         float angle = Mathf.Atan2(aimDir.y, flip * aimDir.x) * Mathf.Rad2Deg;
-        transform.localScale = new Vector3(flip, 1, 1);
+        transform.localScale = new Vector3(flip * w, w, w);
         weapon.eulerAngles = new Vector3(0, 0, flip * angle);
     }
 
@@ -98,6 +103,7 @@ public class PlayerBehavior : MonoBehaviour
 
     void die()
     {
+        died = true;
         animator.SetBool("die", true);
         GameObject sparkInstance = Instantiate(spark, transform.position, transform.rotation);
         Object.Destroy(sparkInstance, 2.0f);
