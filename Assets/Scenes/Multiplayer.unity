@@ -6158,6 +6158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29f2ccef79ad69045bfb982167b6220c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  infinet: 0
 --- !u!1 &795191145
 GameObject:
   m_ObjectHideFlags: 0
@@ -11228,7 +11229,7 @@ MonoBehaviour:
   speed: 5
   distanceToShoot: 5
   distanceToStop: 3
-  spark: {fileID: 2638021918873970054, guid: bf720dac7ffe8234ca5368f5e2654989, type: 3}
+  spark: {fileID: 7113575314518269492, guid: dd708f75e80e7064fa8320f59cc1d7f4, type: 3}
 --- !u!212 &1008490623
 SpriteRenderer:
   m_ObjectHideFlags: 0

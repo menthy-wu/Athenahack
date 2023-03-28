@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8768076423800163972
+--- !u!1 &3392469938692465409
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8768076423800164218}
-  - component: {fileID: 8768076423800163973}
+  - component: {fileID: 8178398174014848700}
+  - component: {fileID: 7316236037140199154}
   m_Layer: 6
   m_Name: Spinning Bullet
   m_TagString: Untagged
@@ -17,13 +17,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8768076423800164218
+--- !u!4 &8178398174014848700
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8768076423800163972}
+  m_GameObject: {fileID: 3392469938692465409}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.87626, y: 0.87626, z: 0.87626}
@@ -32,29 +32,29 @@ Transform:
   m_Father: {fileID: 8768076423993943699}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8768076423800163973
+--- !u!114 &7316236037140199154
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8768076423800163972}
+  m_GameObject: {fileID: 3392469938692465409}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 652a2e3e728d8254dbf74083f8bccbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeDirection: 0
-  numCol: 8
+  changeDirection: 1
+  numCol: 6
   speed: 30
   texture: {fileID: 21300000, guid: b2b8e8443950f6e4998af687b8ba5cee, type: 3}
   color: {r: 1, g: 1, b: 1, a: 1}
   lifetime: 5
-  firerate: 0.5
-  size: 0.8
-  material: {fileID: 2100000, guid: 11033cff73499d741b4d36fc81c1c207, type: 2}
-  spinSpeed: 60
-  timeChangeDirection: 1
+  firerate: 0.05
+  size: 1
+  material: {fileID: 2100000, guid: 1a3088d9f883cdb49ae0dc4cb607a0f2, type: 2}
+  spinSpeed: 30
+  timeChangeDirection: 2
   spark: {fileID: 7113575314518269492, guid: dd708f75e80e7064fa8320f59cc1d7f4, type: 3}
 --- !u!1 &8768076423993943698
 GameObject:
@@ -89,7 +89,7 @@ Transform:
   m_LocalScale: {x: 1.56, y: 1.56, z: 1.56}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 8768076423800164218}
+  - {fileID: 8178398174014848700}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
