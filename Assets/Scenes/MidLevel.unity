@@ -1013,7 +1013,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 20141b11cc2afaa4daa9254492af6d40, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1021,7 +1021,7 @@ SpriteRenderer:
   m_Size: {x: 0.13, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &595108800
@@ -9712,19 +9712,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8768076423800163973, guid: 6d0d5ac224da944469f02ec1f915a34c, type: 3}
       propertyPath: size
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8768076423800163973, guid: 6d0d5ac224da944469f02ec1f915a34c, type: 3}
       propertyPath: speed
-      value: 5
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8768076423800163973, guid: 6d0d5ac224da944469f02ec1f915a34c, type: 3}
       propertyPath: firerate
-      value: 0.2
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 8768076423800163973, guid: 6d0d5ac224da944469f02ec1f915a34c, type: 3}
       propertyPath: spinSpeed
-      value: 30
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8768076423993943698, guid: 6d0d5ac224da944469f02ec1f915a34c, type: 3}
       propertyPath: m_Name
@@ -9735,12 +9735,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8768076423993943699, guid: 6d0d5ac224da944469f02ec1f915a34c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.3762226
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768076423993943699, guid: 6d0d5ac224da944469f02ec1f915a34c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.2919433
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768076423993943699, guid: 6d0d5ac224da944469f02ec1f915a34c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.7053099
+      value: 5.04
       objectReference: {fileID: 0}
     - target: {fileID: 8768076423993943699, guid: 6d0d5ac224da944469f02ec1f915a34c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.452998
+      value: 4.37
       objectReference: {fileID: 0}
     - target: {fileID: 8768076423993943699, guid: 6d0d5ac224da944469f02ec1f915a34c, type: 3}
       propertyPath: m_LocalPosition.z

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6819843, g: 0.7527621, b: 0.7572012, a: 1}
+  m_IndirectSpecularColor: {r: 0.99999946, g: 0.99999946, b: 0.99999946, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -491,21 +491,29 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1182917265, guid: 89ffbaacc882e1547993a806bf42828d, type: 3}
+    - target: {fileID: 2914565634820195602, guid: 2c3681a32888ac741aa3d24ab64c71b7, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.65625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2914565634820195602, guid: 2c3681a32888ac741aa3d24ab64c71b7, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2914565634820195604, guid: 2c3681a32888ac741aa3d24ab64c71b7, type: 3}
       propertyPath: m_Name
       value: Baby
       objectReference: {fileID: 0}
     - target: {fileID: 2914565634820195605, guid: 2c3681a32888ac741aa3d24ab64c71b7, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2914565634820195605, guid: 2c3681a32888ac741aa3d24ab64c71b7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.38
+      value: 4.96
       objectReference: {fileID: 0}
     - target: {fileID: 2914565634820195605, guid: 2c3681a32888ac741aa3d24ab64c71b7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.59
+      value: 10.14
       objectReference: {fileID: 0}
     - target: {fileID: 2914565634820195605, guid: 2c3681a32888ac741aa3d24ab64c71b7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1655,7 +1663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bda7bd53f5df64d40af4abf8cb2ef32b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spark: {fileID: 5268586057238697588, guid: 4e79ce27bc1bd90438cd47babdfec4e5, type: 3}
+  spark: {fileID: 2638021918873970054, guid: bf720dac7ffe8234ca5368f5e2654989, type: 3}
 --- !u!199 &966635831
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -1677,7 +1685,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1a3088d9f883cdb49ae0dc4cb607a0f2, type: 2}
+  - {fileID: 2100000, guid: 360943e94b30009409cc1673e099d92f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9781,15 +9789,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeDirection: 1
-  numCol: 5
+  numCol: 6
   speed: 30
   texture: {fileID: 21300000, guid: b2b8e8443950f6e4998af687b8ba5cee, type: 3}
   color: {r: 1, g: 1, b: 1, a: 1}
   lifetime: 5
-  firerate: 0.3
-  size: 0.8
+  firerate: 0.05
+  size: 1
   material: {fileID: 2100000, guid: 1a3088d9f883cdb49ae0dc4cb607a0f2, type: 2}
-  spinSpeed: 5
+  spinSpeed: 30
   timeChangeDirection: 2
   spark: {fileID: 7113575314518269492, guid: dd708f75e80e7064fa8320f59cc1d7f4, type: 3}
 --- !u!4 &8768076422473273156

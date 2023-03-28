@@ -44,15 +44,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 652a2e3e728d8254dbf74083f8bccbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  changeDirection: 0
   numCol: 5
-  speed: 5
+  speed: 20
   texture: {fileID: 21300000, guid: e2422ff1b872974499db51987eb7671d, type: 3}
   color: {r: 1, g: 0, b: 0, a: 1}
   lifetime: 5
-  firerate: 0.1
-  size: 0.2
+  firerate: 0.5
+  size: 1
   material: {fileID: 2100000, guid: 1a3088d9f883cdb49ae0dc4cb607a0f2, type: 2}
   spinSpeed: 0
+  timeChangeDirection: 0.5
   spark: {fileID: 7113575314518269492, guid: dd708f75e80e7064fa8320f59cc1d7f4, type: 3}
 --- !u!1 &8768076423993943698
 GameObject:
@@ -131,7 +133,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -1897203036, guid: 6cc192e8938353c4f8fc80a3bac24e7c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
